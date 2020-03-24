@@ -50,7 +50,6 @@ class BusMod(loader.Module):
         while response.status_code == 400 and tries < 10:
             response = requests.get(url)
             tries += 1
-            logger.error(tries)
             await message.edit("<code>Intento #" + str(tries) + "...</code>")
 
         if response.status_code == 200:
