@@ -30,14 +30,14 @@ def register(cb):
     cb(CoronaReportsMod())
 
 class CoronaReportsMod(loader.Module):
-    """Description for module"""
+    """Gets the latest COVID-19 report found in JHU database for a specified country"""
     def __init__(self):
         self.config = loader.ModuleConfig("DEFAULT_COUNTRY", _("spain"),
                                           "Enter your default country here")
         self.name = _("Corona")
 
     async def coronacmd(self, message):
-        """Gets the latest COVID-19 report found in JHU database for a specified country"""
+        """.corona [country]"""
         args = utils.get_args_raw(message)
         if not args:
             country = self.config["DEFAULT_COUNTRY"]
