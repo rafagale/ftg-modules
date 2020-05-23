@@ -30,10 +30,10 @@ RANDOM_MESSAGE = ["I completely agree", "I strongly agree⁪", "I agree entirely
 
 class UpvoteMod(loader.Module):
     """Upvote module"""
+    strings = {"name": "Upvote"}
     def __init__(self):
         self.config = loader.ModuleConfig("RANDOM_UPVOTES", RANDOM_MESSAGE, "Random upvote messages")
-        self.name = _("Upvote")
-
+        
     async def upcmd(self, message):
         """.up gives an upvote"""
         upvoteMessage = random.choice(RANDOM_MESSAGE)
