@@ -1,5 +1,3 @@
-# -*- coding: future_fstrings -*-
-
 #    Friendly Telegram (telegram userbot)
 #    Copyright (C) 2018-2020 The Authors
 
@@ -30,10 +28,10 @@ def register(cb):
 
 class BusMod(loader.Module):
     """Bus checker"""
+    strings = {"name": "Bus"}
     def __init__(self):
-        self.config = loader.ModuleConfig("DEFAULT_STOP", _("716"),
+        self.config = loader.ModuleConfig("DEFAULT_STOP", ("716"),
                                           "Enter your default stop here(numeric part only)")
-        self.name = _("Bus")
 
     async def buscmd(self, message):
         """.bus <stop (Optional)>"""
