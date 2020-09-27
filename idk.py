@@ -28,7 +28,7 @@ RANDOM_MEME = ["¯\_(ツ)_/¯", "┐( ∵ )┌⁪", "¯\(◉‿◉)/¯", "¯\_ʘ
                  "乁༼☯️‿☯️✿༽ㄏ", "¯\(°_o)/¯", "¯\_( ͡° ͜ʖ ͡°)_/¯", "¯¯\_༼ •́ ͜ʖ •̀ ༽_/¯",
                  "乁( •_• )ㄏ", "¯\_( ͠° ͟ʖ °͠ )_/¯", "乁( •_• )ㄏ", "¯\_(ツ)_/¯",]
 
-class UpvoteMod(loader.Module):
+class ShruggieMod(loader.Module):
     """Shruggie meme module"""
     strings = {"name": "Shruggie"}
     def __init__(self):
