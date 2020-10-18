@@ -39,6 +39,7 @@ class BusMod(loader.Module):
         args = utils.get_args_raw(message)
         if not args:
             stops.append("tuzsa-" + self.config["DEFAULT_STOP"])
+            stops.append("tuzsa-22")
         elif args == 'ma':
             # Nice hardcode
             stops.append("tuzsa-863")
